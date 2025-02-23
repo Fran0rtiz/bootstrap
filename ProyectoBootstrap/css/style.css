@@ -1,0 +1,42 @@
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Transiciones para imágenes y botones */
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Fuente y márgenes */
+body {
+  font-family: Arial, sans-serif;
+  text-align: justify;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
